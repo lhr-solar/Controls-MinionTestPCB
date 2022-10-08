@@ -1,0 +1,10 @@
+(fp_lib_table
+  (lib (name "SamacSys_Parts")(type "KiCad")(uri "C:/Users/ajfor/OneDrive/Documents/KiCad/SamacSys_Parts.pretty")(options "")(descr ""))
+  (lib (name "UTSVT_Connectors")(type "KiCad")(uri "C:/Users/ajfor/OneDrive/Documents/LHR/Controls-MinionTestPCB/UTSVT-KiCadLibraries/UTSVT_Connectors.pretty")(options "")(descr ""))
+  (lib (name "UTSVT_ICs")(type "KiCad")(uri "C:/Users/ajfor/OneDrive/Documents/LHR/Controls-MinionTestPCB/UTSVT-KiCadLibraries/UTSVT_ICs.pretty")(options "")(descr ""))
+  (lib (name "UTSVT_Mechanical")(type "KiCad")(uri "C:/Users/ajfor/OneDrive/Documents/LHR/Controls-MinionTestPCB/UTSVT-KiCadLibraries/UTSVT_Mechanical.pretty")(options "")(descr ""))
+  (lib (name "UTSVT_Passive")(type "KiCad")(uri "C:/Users/ajfor/OneDrive/Documents/LHR/Controls-MinionTestPCB/UTSVT-KiCadLibraries/UTSVT_Passive.pretty")(options "")(descr ""))
+  (lib (name "UTSVT_Power")(type "KiCad")(uri "C:/Users/ajfor/OneDrive/Documents/LHR/Controls-MinionTestPCB/UTSVT-KiCadLibraries/UTSVT_Power.pretty")(options "")(descr ""))
+  (lib (name "UTSVT_Special")(type "KiCad")(uri "C:/Users/ajfor/OneDrive/Documents/LHR/Controls-MinionTestPCB/UTSVT-KiCadLibraries/UTSVT_Special.pretty")(options "")(descr ""))
+  (lib (name "SamacSys_Parts 2")(type "KiCad")(uri "C:/Users/ajfor/OneDrive/Documents/KiCad/SamacSys_Parts.pretty")(options "")(descr ""))
+)
