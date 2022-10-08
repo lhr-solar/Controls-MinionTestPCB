@@ -1,7 +1,7 @@
 # Controls-MinionTestPCB
  
 # Quality Assurance Checklist 
-To make reviews more efficient, please make sure the board meets the following standards and check everything off once the board meets the quality check. Once everything has been checked, the assigned reviewers will begin the review process. _Edit this description to check off the list._ 
+To make reviews more efficient, please make sure the board meets the following standards and check everything off once the board meets the quality check. Once everything has been checked, the assigned reviewers will begin the review process. 
  
 There are exceptions with all guidelines. As long as your decisions are justified, then you are good! Contact the reviewers or the leads about any exceptions. 
  
@@ -13,35 +13,35 @@ There are exceptions with all guidelines. As long as your decisions are justifie
 - [X] Units are in metric. 
 - [X] Everything in schematic level is annotated and all components have datasheets associated with them. 
 - [X] BOM was generated at schematic level and price of all components is listed in BOM somewhere. 
-- [ ] 2 Members of the team have already reviewed my PR 
+- [X] 2 Members of the team have already reviewed my PR 
 - NOTE: Approver will not look at PR if 2 other members haven't reviewed first 
  
 ## Schematic Level Requirements 
-- [ ] Is proper noise resistance given to all peripheral devices (bypass caps and coils/ferrites)?  
-- [ ] Is proper ESD protection given to all MCU input pins (zener diodes)?  
-- [ ] Is proper power protection given to peripheral devices (zener diodes)?  
+- [X] (NOT APPLICABLE) Is proper noise resistance given to all peripheral devices (bypass caps and coils/ferrites)?  
+- [X] (NOT APPLICABLE) Is proper ESD protection given to all MCU input pins (zener diodes)?  
+- [X] (NOT APPLICABLE) Is proper power protection given to peripheral devices (zener diodes)?  
 - [X] Are peripheral units used properly (reading datasheet)?  
 - [X] Are testing points added at useful places?  
-- [ ] Is there proper short to GND protection at MCU outputs (inline resistors)?  
-- [ ] Do ADC inputs have caps?  
-- [ ] Are ADC inputs biased so there is room above expected value to determine if value is being overflowed?  
+- [X] (NOT APPLICABLE) Is there proper short to GND protection at MCU outputs (inline resistors)?  
+- [X] (NOT APPLICABLE) Do ADC inputs have caps?  
+- [X] (NOT APPLICABLE) Are ADC inputs biased so there is room above expected value to determine if value is being overflowed?  
 - [X] Are LED's located at useful places (comm, power, debugging, extra GPIO)?  
 - [X] Are parts chosen easy to collect?  
 - [X] Are parts chosen easy to solder?  
-- [ ] Is there reverse polarity protection on inputs?  
+- [X] (NOT APPLICABLE) Is there reverse polarity protection on inputs?  
 - [X] Schematic should have version number in Revision portion on bottom right of top level sheet. 
  
 ## Layout Level Requirements 
  
 ### 2D Spacing 
-- [ ] The components are spaced out at an optimal distance. 
+- [X] The components are spaced out at an optimal distance. 
 	- All components can be easily hand-soldered. 
 	- IPC-SM-782A Standard requires a minimum distance of 1.0mm from edge to edge. 
-- [ ] Components that are in parallel with each other are spaced out at an equal distance when possible. 
-- [ ] The components are aligned with each other when possible. 
-- [ ] Components are grouped based off of functionality. 
+- [X] Components that are in parallel with each other are spaced out at an equal distance when possible. 
+- [X] The components are aligned with each other when possible. 
+- [X] Components are grouped based off of functionality. 
 	- E.g. all components for CAN should be grouped. 
-- [ ] Bypass capacitors are less than 1cm away from their respective IC's power pins. 
+- [X] (NOT APPLICABLE) Bypass capacitors are less than 1cm away from their respective IC's power pins. 
  
  
 ### 3D Spacing 
@@ -60,20 +60,23 @@ There are exceptions with all guidelines. As long as your decisions are justifie
 - [X] Are critical paths of switching converters as small as possible?  
  
 ### Copper Layer 
-- [ ] The trace widths and trace clearances are greater than JLCPCB's minimum requirements. 
-	- [ ] Are signal traces 6mils unless provided with reasoning?   
+- [X] The trace widths and trace clearances are greater than JLCPCB's minimum requirements. 
+	- [X] Are signal traces 6mils unless provided with reasoning?   
     	- NOTE: One net can have multiple trace widths  
-- [ ] The trace lengths are as short as possible. 
+- [X] The trace lengths are as short as possible. 
 	- Can there be a more optimal route if you go to another layer? 
-- [ ] Each trace's width is capable of handling the expected current flow. 
+- [X] Each trace's width is capable of handling the expected current flow. 
 	- Use PCB width calculator to calculate trace width. 
+    - 2mA for LED diodes (trace 0.25mm can handle 400mA)
+    - 400mA max for switches (trace 0.25mm can handle 400mA)
+    - 3A for banana plugs (trace 3.6mm can handle 3A)
 - [X] *No sharp corners. No trace angles equal to or less than 90 degrees. 
 	- Orthogonal traces should have vias if necessary. 
-- [ ] Are edges of board surrounded by clean ground on both layers with stitching vias?  
-- [ ] Traces are in parallel with each other when possible. 
+- [X] (NOT APPLICABLE) Are edges of board surrounded by clean ground on both layers with stitching vias? 
+- [X] Traces are in parallel with each other when possible. 
 	- E.g. traces connected between an IC and MCU can be placed in parallel with each other. 
-- [ ] There are no random trace appendages. 
-- [ ] No vias on copper pads 
+- [X] There are no random trace appendages. 
+- [X] No vias on copper pads 
 - [X] Through-hole components do not have extraneous vias. 
  
 *Not really a problem for modern manufacturing techniques but good practice and important for high speed signal integrity. 
