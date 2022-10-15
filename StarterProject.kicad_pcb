@@ -52,7 +52,7 @@
       (dielectric_constraints no)
     )
     (pad_to_mask_clearance 0)
-    (grid_origin 54.5 53.5)
+    (grid_origin 57.7 30.5)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
       (disableapertmacros false)
@@ -4972,7 +4972,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 40193796-eda1-4f41-859a-5eec2715f0c8)
     )
-    (fp_text value "GND" (at 0 -0.5) (layer "F.Fab")
+    (fp_text value "GND" (at -0.02 -3.6) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a737f158-2f50-4868-ab55-e2418cd2f797)
     )
@@ -7330,6 +7330,9 @@
   (gr_text "-\n" (at 77.75 41.75) (layer "F.SilkS") (tstamp 0efc9378-8741-4150-a52a-8a65a3232204)
     (effects (font (size 1 1) (thickness 0.15)))
   )
+  (gr_text "-\n" (at 42.3 51.9) (layer "F.SilkS") (tstamp 15717514-037f-44f4-a42e-d4ab5486dca5)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text "-\n" (at 42.1 36.9) (layer "F.SilkS") (tstamp 17a10393-be5b-458b-9f58-ba26c9843e6a)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -7373,6 +7376,9 @@
     (effects (font (size 0.8 0.8) (thickness 0.2)))
   )
   (gr_text "-\n" (at 77.9199 67.84 180) (layer "F.SilkS") (tstamp 7f83e952-7f19-4181-9501-84f00730a33a)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "+" (at 42.3 54.9) (layer "F.SilkS") (tstamp 82e83c89-13c0-4e14-9615-bd18f2360f7f)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "-\n" (at 113 41.75) (layer "F.SilkS") (tstamp 8479ab0c-c1a4-4dd8-b272-25fb45110f8d)
@@ -7442,6 +7448,9 @@
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "-\n" (at 115.25 85.5) (layer "F.SilkS") (tstamp e85d5f01-45a6-4117-8a97-fe0e47959ade)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "12 V" (at 57.9 42.5) (layer "F.SilkS") (tstamp ea06956c-0d75-4fda-ad7b-fcde1416149b)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "-\n" (at 104.202 96.469 180) (layer "F.SilkS") (tstamp fd0eb35b-6ac9-4cdb-a82b-9c03e474eec4)
@@ -34168,6 +34177,12 @@
     (members
       7f83e952-7f19-4181-9501-84f00730a33a
       d5539cb8-0122-48d6-a9ce-e3edc3e73195
+    )
+  )
+  (group "" (id 751ef0fe-e673-4d0e-84c9-618efa213584)
+    (members
+      15717514-037f-44f4-a42e-d4ab5486dca5
+      82e83c89-13c0-4e14-9615-bd18f2360f7f
     )
   )
   (group "" (id b0511610-90c9-44da-8572-3357dd819753)
